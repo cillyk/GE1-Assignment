@@ -1,6 +1,6 @@
 # Project Title
 
-Name:
+Name: The Futuristic FIsh Tank
 
 Student Number: 
 
