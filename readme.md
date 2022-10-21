@@ -1,12 +1,22 @@
 # Project Title
 
-Name: The Futuristic FIsh Tank
+Name: The Futuristic Fish Tank
 
 Student Number: 
 
 Class Group:
 
 # Description of the project
+
+*Proposal*
+
+A futuristic fish tank
+
+I wish to create a futuristic fish tank in unity
+I want the fish to be generated using shapes and then to have a randomly selected appearence
+I want the tank go have a futuristic appearance along with buttons that the user can interact with
+The buttons should change the apperence of both the fish and tanks
+The Fish will move in a generated path using similar trigjnamotery to what we did In class
 
 # Instructions for use
 
