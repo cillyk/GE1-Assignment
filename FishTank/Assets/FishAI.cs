@@ -11,7 +11,6 @@ public class FishAI : MonoBehaviour
     public float speed = 10;
     public Transform player;    
    
-    int test = 0;
 
     public void OnDrawGizmos()
     {
