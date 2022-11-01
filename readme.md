@@ -1,6 +1,6 @@
 # Project Title
 
-Name: The Futuristic Fish Tank
+Name: The Futuristic Fish Tank Speaker Vizualiser Thing
 
 Student Number: 
 
@@ -10,13 +10,13 @@ Class Group:
 
 *Proposal*
 
-A futuristic fish tank
+A futuristic fish tank that acts as a speaker/visualizer
 
 I wish to create a futuristic fish tank in unity
-I want the fish to be generated using shapes and then to have a randomly selected appearence
-I want the tank go have a futuristic appearance along with buttons that the user can interact with
-The buttons should change the apperence of both the fish and tanks
-The Fish will move in a generated path using similar trigjnamotery to what we did In class
+I want the fish to look futuristic and contain moving fish that are generated 
+I wish to have music playing
+I want to have the appearence of the tank cchnage with the music 
+I want the fish to change path b ased on the music
 
 # Instructions for use
 
@@ -27,7 +27,7 @@ The Fish will move in a generated path using similar trigjnamotery to what we di
 | Class/asset | Source |
 |-----------|-----------|
 | MyClass.cs | Self written |
-| MyClass1.cs | Modified from [reference]() |
+| SongSpectrum.cs | Modified from [https://www.youtube.com/watch?v=PzVbaaxgPco]() |
 | MyClass2.cs | From [reference]() |
 
 # References
