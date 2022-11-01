@@ -6,12 +6,11 @@ public class CameraFollow : MonoBehaviour
 {
     public Transform player;
     public float Speed = 0.125f;
-    public Vector3 FOV;
+    public float FOV;
     void LateUpdate()
     {
-    Vector3 desiredPos = player.position + FOV;
-    Vector3 smoothPos = Vector3.Lerp(transform.position, desiredPos, Speed);
-    transform.position= smoothPos;
-    transform.LookAt(player);
+        transform.position = player.transform.position - player.transform.forward * FOV;
+        transform.LookAt (player.transform.position);
+        transform.position = new Vector3 (transform.position.x , transform.position.y +1, transform.position.z );
     }
 }
