@@ -13,8 +13,10 @@ Class Group:
 A futuristic fish tank that acts as a speaker/visualizer
 
 I wish to create a futuristic fish tank in unity
-I want the fish to look futuristic and contain moving fish
-I wish to use music to change the coloursand appearence of the fish and tank with the eat of the music
+I want the fish to look futuristic and contain moving fish that are generated 
+I wish to have music playing
+I want to have the appearence of the tank cchnage with the music 
+I want the fish to change path b ased on the music
 
 # Instructions for use
 
