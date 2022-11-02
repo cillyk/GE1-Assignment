@@ -5,8 +5,12 @@ using UnityEngine;
 public class SongSpectrum : MonoBehaviour
 {
 
-    private float[] Spectrum;
+    
+
+    //how much to multiply the song by (adjust depending on song loudness)
     public int SongMultiplier;
+
+    private float[] Spectrum;
     public static float SpectrumValue;
 
     // Start is called before the first frame update

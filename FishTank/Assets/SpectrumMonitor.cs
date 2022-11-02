@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//followed youtube tutorial linked in git for this script
+
 public class SpectrumMonitor : MonoBehaviour
 {
     public float bias;

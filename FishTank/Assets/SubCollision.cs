@@ -5,7 +5,7 @@ using UnityEngine;
 public class SubCollision : MonoBehaviour
 {
     void OnCollisionEnter() {
-        Debug.Log("noooo");
+        Debug.Log("submarine has collided");
         
     }
    

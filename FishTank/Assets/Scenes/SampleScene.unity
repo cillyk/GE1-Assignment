@@ -615,6 +615,7 @@ GameObject:
   - component: {fileID: 587798747}
   - component: {fileID: 587798746}
   - component: {fileID: 587798749}
+  - component: {fileID: 587798750}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -719,6 +720,25 @@ MonoBehaviour:
   restSmoothTime: 2
   beatScale: {x: 5, y: 4.245, z: 5}
   noBeatScale: {x: 4.375, y: 4.245, z: 3.72}
+--- !u!114 &587798750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587798744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed4daf5d3bdd474b8822fa8f2da0314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bias: 8.93
+  timeStep: 0.5
+  timeToBeat: 0.01
+  restSmoothTime: 1.98
+  beatColour: {r: 1, g: 0.023584902, b: 0.023584902, a: 0}
+  noBeatColour: {r: 0.043704987, g: 1, b: 0, a: 0}
+  mat: {fileID: 2100000, guid: 9c40eb8a88b08b447aef8c7c1bdbcefa, type: 2}
 --- !u!1 &682001963
 GameObject:
   m_ObjectHideFlags: 0
@@ -2171,6 +2191,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d56800ae4c4b6a4da7ac90d77affce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bias: 4.55
+  timeStep: 0.1
+  timeToBeat: 0.01
+  restSmoothTime: 2
   cubePrefab: {fileID: 2014584826}
 --- !u!4 &2033606782
 Transform:

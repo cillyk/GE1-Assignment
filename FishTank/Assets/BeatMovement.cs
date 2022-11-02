@@ -7,7 +7,7 @@ public class BeatMovement : SpectrumMonitor
     public Vector3 beatScale;
 	public Vector3 noBeatScale;
     
-    private IEnumerator MoveToScale(Vector3 _target)
+    private IEnumerator ChangeScale(Vector3 _target)
 	{
 		Vector3 _curr = transform.localScale;
 		Vector3 _initial = _curr;
@@ -32,8 +32,8 @@ public class BeatMovement : SpectrumMonitor
     public override void Beat()
 	{
         base.Beat();
-		Debug.Log("move here");
-        StopCoroutine("MoveToScale");
-		StartCoroutine("MoveToScale", beatScale);
+		//Debug.Log("move here");
+        StopCoroutine("ChangeScale");
+		StartCoroutine("ChangeScale", beatScale);
 	}
 }
