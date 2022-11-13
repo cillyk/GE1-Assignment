@@ -1714,7 +1714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b561656de1dab4c814b6e77433e4df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bias: 0.1
+  bias: 1
   timeStep: 0.2
   timeToBeat: 0.07
   restSmoothTime: 2
@@ -4303,7 +4303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b561656de1dab4c814b6e77433e4df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bias: 0.1
+  bias: 1
   timeStep: 0.2
   timeToBeat: 0.07
   restSmoothTime: 2
