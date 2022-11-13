@@ -16,7 +16,8 @@ I wish to create a futuristic fish tank in unity.
  - There will be fish to be inside the fish tank moving there fins and around the tank on generated path.
  - Music will be playing.
  - The appearence of the tank along with the lighting change in beat with the music.
- - The fish to will adjust movement in beat with the music.
+ - The fish to will adjust movement depedning on a generated path.
+ - The tank will be decorated randomly on every start of the project.
  - There will be a submarine you can eneter to move around the tank and view it in first person.
  - The fish should avoid this submarine.
 
