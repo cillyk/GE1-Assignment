@@ -1,22 +1,24 @@
 # Project Title
 
-Name: The Futuristic Fish Tank Speaker Vizualiser Thing
+Name: The Futuristic Fish Tank Vizualiser
 
-Student Number: 
+Student Number: C19491104
 
-Class Group:
+Class Group: DT211C
 
 # Description of the project
 
 *Proposal*
 
-A futuristic fish tank that acts as a speaker/visualizer
+A futuristic fish tank that acts as a music visualizer
 
-I wish to create a futuristic fish tank in unity
-I want the fish to look futuristic and contain moving fish that are generated 
-I wish to have music playing
-I want to have the appearence of the tank cchnage with the music 
-I want the fish to change path b ased on the music
+I wish to create a futuristic fish tank in unity.
+ - There will be fish to be inside the fish tank moving there fins and around the tank on generated path.
+ - Music will be playing.
+ - The appearence of the tank along with the lighting change in beat with the music.
+ - The fish to will adjust movement in beat with the music.
+ - There will be a submarine you can eneter to move around the tank and view it in first person.
+ - The fish should avoid this submarine.
 
 # Instructions for use
 
