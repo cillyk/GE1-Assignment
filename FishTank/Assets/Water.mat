@@ -16,7 +16,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -46,18 +46,18 @@ Material:
     m_Ints: []
     m_Floats:
     - _Depth: 0
-    - _DepthThreshold: 0
+    - _DepthThreshold: 0.059
     - _FPower: 1
     - _FScale: 1
     - _FlowCycleLength: 1
     - _FlowSpeed: 0
     - _Glossiness: 0.5
     - _Metallic: 0
-    - _NormalScale: 0
+    - _NormalScale: 0.417
     - _Strength: 0.05
     - _ToonShaded: 0
-    - _WaveHeight: 1
-    - _WaveSpeed: 100
+    - _WaveHeight: 1.15
+    - _WaveSpeed: 74
     - _XFreq: 0
     - _XScale: 1
     - _XSpeed: 0.3
@@ -65,7 +65,7 @@ Material:
     - _YSpeed: 0.3
     - _ZFreq: 0
     m_Colors:
-    - _Color: {r: 0.0894426, g: 0.30118772, b: 1, a: 0}
+    - _Color: {r: 0.0876215, g: 0.29886985, b: 1, a: 0}
     - _DepthColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
-    - _FColor: {r: 0.21226418, g: 0.42136902, b: 1, a: 0}
+    - _FColor: {r: 0, g: 0.24652743, b: 1, a: 0.5176471}
   m_BuildTextureStacks: []
