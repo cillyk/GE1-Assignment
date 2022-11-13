@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Material))]
-public class BeatLighting : SpectrumMonitor
+public class BeatColour : SpectrumMonitor
 {
     public Color beatColour;
 	public Color noBeatColour;
@@ -11,7 +11,7 @@ public class BeatLighting : SpectrumMonitor
 	[SerializeField]
 	private Material mat;
     
-    private IEnumerator ChangeLight(Color _target)
+    private IEnumerator ChangeColour(Color _target)
 	{
 		Color _curr = mat.color;
 		Color _initial = _curr;
@@ -32,13 +32,20 @@ public class BeatLighting : SpectrumMonitor
 		base.Update();
 		mat.color = Color.Lerp(mat.color, noBeatColour, restSmoothTime * Time.deltaTime);
 	}
+
+	public void RandomColour()
+	{
+		beatColour = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+	}
+
     // Update is called once per frame
     public override void Beat()
 	{
+		RandomColour();
         base.Beat();
 		Debug.Log("move here");
-        StopCoroutine("ChangeLight");
-		StartCoroutine("ChangeLight", beatColour);
+        StopCoroutine("ChangeColour");
+		StartCoroutine("ChangeColour", beatColour);
 	}
 	
 
