@@ -10,18 +10,22 @@ public class BeatColour : SongMonitor
 
 	[SerializeField]
 	private Material mat;
+	
     
     private IEnumerator ChangeColour(Color _target)
 	{
+		mat.EnableKeyword("_EMISSION");
 		Color _curr = mat.color;
 		Color _initial = _curr;
 		float _timer = 0;
-
+		
 		while (_curr != _target)
 		{
 			_curr = Color.Lerp(_initial, _target, _timer / timeToBeat);
 			_timer += Time.deltaTime;
+			mat.SetColor("_EmissionColor", _curr);
 			mat.color = _curr;
+			
 			yield return null;
 		}
 
@@ -31,6 +35,7 @@ public class BeatColour : SongMonitor
 	{
 		base.Update();
 		mat.color = Color.Lerp(mat.color, noBeatColour, restSmoothTime * Time.deltaTime);
+		DynamicGI.UpdateEnvironment();
 	}
 
 	public void RandomColour()
