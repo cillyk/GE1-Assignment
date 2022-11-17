@@ -25,7 +25,6 @@ public class BeatColour : SongMonitor
 			_timer += Time.deltaTime;
 			mat.SetColor("_EmissionColor", _curr);
 			mat.color = _curr;
-			
 			yield return null;
 		}
 
@@ -35,12 +34,12 @@ public class BeatColour : SongMonitor
 	{
 		base.Update();
 		mat.color = Color.Lerp(mat.color, noBeatColour, restSmoothTime * Time.deltaTime);
-		DynamicGI.UpdateEnvironment();
+		//DynamicGI.UpdateEnvironment();
 	}
 
 	public void RandomColour()
 	{
-		beatColour = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+		beatColour = Random.ColorHSV(0f, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
 	}
 
     // Update is called once per frame

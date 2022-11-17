@@ -46,7 +46,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Depth: 0
-    - _DepthThreshold: 0.059
+    - _DepthThreshold: 0
     - _FPower: 1
     - _FScale: 1
     - _FlowCycleLength: 1
@@ -56,8 +56,8 @@ Material:
     - _NormalScale: 0.417
     - _Strength: 0.05
     - _ToonShaded: 0
-    - _WaveHeight: 1.15
-    - _WaveSpeed: 74
+    - _WaveHeight: 0.04
+    - _WaveSpeed: 12.6
     - _XFreq: 0
     - _XScale: 1
     - _XSpeed: 0.3
