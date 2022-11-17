@@ -24,7 +24,7 @@ public class FishPath: MonoBehaviour
             for(int i = 0 ; i < numWaypoints ; i ++)
             {
                 float angle = theta * i;
-                Vector3 pos = new Vector3(Mathf.Sin(angle) * radius, 10, Mathf.Cos(angle) * radius);
+                Vector3 pos = new Vector3(Mathf.Sin(angle) * radius, 0, Mathf.Cos(angle) * radius);
                 pos = transform.TransformPoint(pos);
                 Gizmos.color = Color.red;
                 Gizmos.DrawWireSphere(pos, 1); 
