@@ -47,7 +47,7 @@ public class BeatColour : SongMonitor
 	{
 		RandomColour();
         base.Beat();
-		Debug.Log("move here");
+		//Debug.Log("move here");
         StopCoroutine("ChangeColour");
 		StartCoroutine("ChangeColour", beatColour);
 	}
