@@ -8,17 +8,16 @@ Class Group: DT211C
 
 # Description of the project
 
-*Proposal*
+
 
 A futuristic fish tank that acts as a music visualizer
 
-I wish to create a futuristic fish tank in unity.
- - There will be fish to be inside the fish tank moving around the tank on ranomly generated path.
- - Music will be playing.
- - The the lighting and colours will change in beat with the music.
- - There will be music visualisers around the fihs tank.
- - The tank will be decorated randomly on every start of the project.
- - There will be a Fish you can cantrol to move around the tank and view it in first person with water like physics.
+ - There are fish to be inside the fish tank moving around the tank on ranomly generated path.
+ - Music plays and this can be any song the user decides on.
+ - The lighting and colours of the tank will change in beat with the music.
+ - Thereare music visualisers around the fish tank.
+ - The tank is decorated randomly on every start of the project.
+ - There is be a Fish you can cantrol y pressing E and then you can move around the tank and view it in first person with water like physics.
 
 # Instructions for use
 
@@ -51,6 +50,17 @@ Different intensity and frequency of beats will be used to control different par
 # What I am most proud of in the assignment
 
 # Proposal submitted earlier can go here:
+
+*Original Proposal*
+
+A futuristic fish tank
+
+I wish to create a futuristic fish tank in unity
+I want the fish to be generated using shapes and then to have a randomly selected appearence
+I want the tank go have a futuristic appearance along with buttons that the user can interact with
+The buttons should change the apperence of both the fish and tanks
+The Fish will move in a generated path using similar trignamotery to what we did In class
+
 
 ## This is how to markdown text:
 
