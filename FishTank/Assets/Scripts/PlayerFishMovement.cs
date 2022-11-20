@@ -20,17 +20,22 @@ public class PlayerFishMovement : MonoBehaviour
         
         transform.Translate( 0,0, Input.GetAxis("Vertical") * speed * Time.deltaTime);
         transform.Rotate(0, Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime, 0);
-        if (Input.GetKey(KeyCode.Space))
-        {
-        GetComponent<Rigidbody>().velocity = transform.up * 1;
-        }
+
+        
         if (Input.GetKey(KeyCode.LeftControl))
         {    
         GetComponent<Rigidbody>().velocity = transform.up * -1;
         }
-        else
+        if (Input.GetKey(KeyCode.Space))
+        {
+        GetComponent<Rigidbody>().velocity = transform.up * 1;
+        }
+        else if(true)
         {
             GetComponent<Rigidbody>().velocity = transform.up * 0;
         }
+        
+        
+        
     }
 }

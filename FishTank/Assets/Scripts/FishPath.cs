@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class FishPath: MonoBehaviour
 {
-    public float radius = 5;
-    public int numWaypoints = 5;
-    public int current = 0;
+    public float radius;
+    public int numWaypoints ;
+    public int current;
     List<Vector3> waypoints = new List<Vector3>();
-    public float speed = 10;
-    public Transform player; 
-    public GameObject SwimRing;  
+    public float speed;
+    public Transform fish; 
+    public GameObject swimRing;  
    
      
    
@@ -44,7 +44,7 @@ public class FishPath: MonoBehaviour
             waypoints.Add(pos); 
             float angleDegrees = -angle*Mathf.Rad2Deg;
             Quaternion rot = Quaternion.Euler(0, angleDegrees, 0);
-            Instantiate(SwimRing, pos, rot);
+            Instantiate(swimRing, pos, rot);
         }
     }
 
@@ -60,7 +60,7 @@ public class FishPath: MonoBehaviour
         }
         Vector3 direction = toNext / dist;
         transform.position = Vector3.Slerp(transform.position, waypoints[current], Time.deltaTime);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(toNext, Vector3.up), 180 * Time.deltaTime);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(toNext, new Vector3(0,0,0)), 180 * Time.deltaTime);
     }
 
   

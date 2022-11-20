@@ -2,61 +2,49 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FishSwim: MonoBehaviour {
-  public Transform Fish; 
-  private float waitTimer = 0.0f;
-  public int canMove = 1;
-  
-  public string SpawnPointTag = "FishSpawnPoint";
-
-  void Start() {
-      
-    
-    
-    // transform.position = Vector3.Slerp(transform.position, waypoints[current], Time.deltaTime);
-    // transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(toNext, Vector3.up), 180 * Time.deltaTime);
-
-  }
-
+public class FishSwim: MonoBehaviour 
+{
+  public string spawnPointTag = "FishSpawnPoint";
+  private float fishSpeed = 1;
+  private float fishCooldown = 1;
+  private bool canSwim = false;
+  private Vector3 targetPoint;
+  private Vector3 currentPoint;
   void Update() 
-  {
-      if (canMove == 1)
-      {
-          StartCoroutine(Swim());
-      }
-      else 
-      {
-          //lblala
-      }
-    
-     
+  { 
+    if(!canSwim)
+    {
+      canSwim = true;
+      StartCoroutine(Swim());
+    }
   }
 
   IEnumerator Swim()
+  {
+    float timer = 0;
+    fishSpeed = Random.Range(10, 20);
+    fishCooldown = Random.Range(1, 3);
+    targetPoint = RandomPoint();
+    currentPoint = transform.position;
+    transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(targetPoint, Vector3.up), 90);
+    while (timer < fishSpeed)
     {
-        Vector3 startingPos  = transform.position;
-        Vector3 finalPos = RandomPoint();
-        
-        float elapsedTime = 0;
-     
-        while (transform.position != finalPos)
-        {
-            transform.position = Vector3.Slerp(transform.position, finalPos, Time.deltaTime);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(finalPos, Vector3.up), 180 * Time.deltaTime);
-            
-        }
-        canMove = 0;
-        yield return null;
-        
+      timer += Time.deltaTime;
+      float t = timer / fishSpeed;
+      transform.position = Vector3.Lerp(currentPoint, targetPoint, t);
+      
+      yield return null;
     }
-
-
+      yield return new WaitForSeconds(fishCooldown);
+      canSwim = false;
+  }
 
   Vector3 RandomPoint() 
   {
-    GameObject[] SpawnPoints = GameObject.FindGameObjectsWithTag(SpawnPointTag);
+    GameObject[] SpawnPoints = GameObject.FindGameObjectsWithTag(spawnPointTag);
     int randomIndex = Random.Range(0, SpawnPoints.Length);
     Vector3 randomPoint = SpawnPoints[randomIndex].transform.position;
     return randomPoint;
   }
+
 }

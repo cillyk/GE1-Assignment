@@ -53,7 +53,7 @@ Material:
     - _FlowSpeed: 0
     - _Glossiness: 0.5
     - _Metallic: 0
-    - _NormalScale: 0.417
+    - _NormalScale: 0
     - _Strength: 0.05
     - _ToonShaded: 0
     - _WaveHeight: 0.04

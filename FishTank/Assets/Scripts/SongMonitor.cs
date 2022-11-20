@@ -18,7 +18,7 @@ public class SongMonitor : MonoBehaviour
     public virtual void Beat() {
 
 		//hit when bias is upper or lower creating a "beat
-        Debug.Log("beat is happening");
+        //Debug.Log("beat is happening");
         timer = 0;
 		isBeat = true;
     }
