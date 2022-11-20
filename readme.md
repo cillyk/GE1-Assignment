@@ -13,13 +13,12 @@ Class Group: DT211C
 A futuristic fish tank that acts as a music visualizer
 
 I wish to create a futuristic fish tank in unity.
- - There will be fish to be inside the fish tank moving there fins and around the tank on generated path.
+ - There will be fish to be inside the fish tank moving around the tank on ranomly generated path.
  - Music will be playing.
- - The appearence of the tank along with the lighting change in beat with the music.
- - The fish to will adjust movement depedning on a generated path.
+ - The the lighting and colours will change in beat with the music.
+ - There will be music visualisers around the fihs tank.
  - The tank will be decorated randomly on every start of the project.
- - There will be a submarine you can eneter to move around the tank and view it in first person.
- - The fish should avoid this submarine.
+ - There will be a Fish you can cantrol to move around the tank and view it in first person with water like physics.
 
 # Instructions for use
 
