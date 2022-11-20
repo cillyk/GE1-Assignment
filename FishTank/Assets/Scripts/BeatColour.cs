@@ -6,7 +6,7 @@ using UnityEngine;
 public class BeatColour : SongMonitor
 {
     public Color beatColour;
-	public Color noBeatColour;
+	Color initialColour;
 
 	[SerializeField]
 	private Material mat;
@@ -15,16 +15,16 @@ public class BeatColour : SongMonitor
     private IEnumerator ChangeColour(Color _target)
 	{
 		mat.EnableKeyword("_EMISSION");
-		Color _curr = mat.color;
-		Color _initial = _curr;
-		float _timer = 0;
+		Color currentColour = mat.color;
+		Color initialColour = currentColour;
+		float timer = 0;
 		
-		while (_curr != _target)
+		while (currentColour != _target)
 		{
-			_curr = Color.Lerp(_initial, _target, _timer / timeToBeat);
-			_timer += Time.deltaTime;
-			mat.SetColor("_EmissionColor", _curr);
-			mat.color = _curr;
+			currentColour = Color.Lerp(initialColour, _target, timer / timeToBeat);
+			timer += Time.deltaTime;
+			mat.SetColor("_EmissionColor", currentColour);
+			mat.color = currentColour;
 			yield return null;
 		}
 
@@ -33,7 +33,7 @@ public class BeatColour : SongMonitor
     public override void Update()
 	{
 		base.Update();
-		mat.color = Color.Lerp(mat.color, noBeatColour, restSmoothTime * Time.deltaTime);
+		mat.color = Color.Lerp(mat.color, initialColour, restSmoothTime * Time.deltaTime);
 		//DynamicGI.UpdateEnvironment();
 	}
 

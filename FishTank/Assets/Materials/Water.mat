@@ -57,7 +57,7 @@ Material:
     - _Strength: 0.05
     - _ToonShaded: 0
     - _WaveHeight: 0
-    - _WaveSpeed: 2
+    - _WaveSpeed: 0
     - _XFreq: 0
     - _XScale: 1
     - _XSpeed: 0.3

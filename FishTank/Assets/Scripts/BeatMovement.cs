@@ -7,17 +7,17 @@ public class BeatMovement : SongMonitor
     public Vector3 beatScale;
 	public Vector3 noBeatScale;
     
-    private IEnumerator ChangeScale(Vector3 _target)
+    private IEnumerator ChangeScale(Vector3 targetScale)
 	{
-		Vector3 _curr = transform.localScale;
-		Vector3 _initial = _curr;
-		float _timer = 0;
+		Vector3 currentScale = transform.localScale;
+		Vector3 initialScale = currentScale;
+		float timer = 0;
 
-		while (_curr != _target)
+		while (currentScale !=targetScale)
 		{
-			_curr = Vector3.Lerp(_initial, _target, _timer / timeToBeat);
-			_timer += Time.deltaTime;
-			transform.localScale = _curr;
+			currentScale = Vector3.Lerp(initialScale,targetScale, timer / timeToBeat);
+			timer += Time.deltaTime;
+			transform.localScale = currentScale;
 			yield return null;
 		}
 
@@ -28,11 +28,10 @@ public class BeatMovement : SongMonitor
 		base.Update();
 		transform.localScale = Vector3.Lerp(transform.localScale, noBeatScale, restSmoothTime * Time.deltaTime);
 	}
-    // Update is called once per frame
+    
     public override void Beat()
 	{
         base.Beat();
-		//Debug.Log("move here");
         StopCoroutine("ChangeScale");
 		StartCoroutine("ChangeScale", beatScale);
 	}

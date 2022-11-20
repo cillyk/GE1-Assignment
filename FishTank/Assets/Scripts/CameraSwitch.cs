@@ -7,7 +7,8 @@ public class CameraSwitch : MonoBehaviour
 
     public Camera mainCam;
     public Camera fishCam ;
-    // Start is called before the first frame update
+    
+    //enable main camera by defaault
     void Start()
     {
         mainCam.GetComponent<Camera>().enabled = true;
@@ -15,7 +16,7 @@ public class CameraSwitch : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    //if e is pressed switched camera
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.E))
