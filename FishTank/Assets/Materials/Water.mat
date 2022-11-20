@@ -56,8 +56,8 @@ Material:
     - _NormalScale: 0
     - _Strength: 0.05
     - _ToonShaded: 0
-    - _WaveHeight: 0.04
-    - _WaveSpeed: 12.6
+    - _WaveHeight: 0
+    - _WaveSpeed: 2
     - _XFreq: 0
     - _XScale: 1
     - _XSpeed: 0.3
@@ -65,7 +65,7 @@ Material:
     - _YSpeed: 0.3
     - _ZFreq: 0
     m_Colors:
-    - _Color: {r: 0.0876215, g: 0.29886985, b: 1, a: 0}
+    - _Color: {r: 0, g: 0.6272721, b: 1, a: 0}
     - _DepthColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
-    - _FColor: {r: 0, g: 0.24652743, b: 1, a: 0.5176471}
+    - _FColor: {r: 0.033018887, g: 0.7860835, b: 1, a: 0.5176471}
   m_BuildTextureStacks: []

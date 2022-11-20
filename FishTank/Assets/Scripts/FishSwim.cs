@@ -10,6 +10,9 @@ public class FishSwim: MonoBehaviour
   private bool canSwim = false;
   private Vector3 targetPoint;
   private Vector3 currentPoint;
+  private Vector3 direction;
+  private Quaternion lookRotation;
+
   void Update() 
   { 
     if(!canSwim)
@@ -26,12 +29,15 @@ public class FishSwim: MonoBehaviour
     fishCooldown = Random.Range(1, 3);
     targetPoint = RandomPoint();
     currentPoint = transform.position;
-    transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(targetPoint, Vector3.up), 90);
+    direction = (targetPoint - currentPoint).normalized;
+    lookRotation = Quaternion.LookRotation(direction);
+    
     while (timer < fishSpeed)
     {
       timer += Time.deltaTime;
       float t = timer / fishSpeed;
       transform.position = Vector3.Lerp(currentPoint, targetPoint, t);
+      transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, t);
       
       yield return null;
     }

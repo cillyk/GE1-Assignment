@@ -30,10 +30,12 @@ public class PlayerFishMovement : MonoBehaviour
         {
         GetComponent<Rigidbody>().velocity = transform.up * 1;
         }
-        else if(true)
+        if(!Input.GetKey(KeyCode.Space) & !Input.GetKey(KeyCode.LeftControl))
         {
             GetComponent<Rigidbody>().velocity = transform.up * 0;
         }
+        
+        
         
         
         
