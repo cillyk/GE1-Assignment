@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlayerFishCamera : MonoBehaviour
 {
     public Transform player;
-    public float Speed = 0.125f;
+    public float speed = 0.125f;
     public float FOV;
+
+    //have camera follow fish when player is controlling it
     void LateUpdate()
     {
         transform.position = player.transform.position - player.transform.forward * FOV;

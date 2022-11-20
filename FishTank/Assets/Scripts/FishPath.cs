@@ -12,14 +12,11 @@ public class FishPath: MonoBehaviour
     public Transform fish; 
     public GameObject swimRing;  
    
-     
-   
-
     public void OnDrawGizmos()
     {
         if (!Application.isPlaying)
         {
-            // Create the ring of the waypoints
+            // Create the ring of the waypoints around the fish
             float theta = (Mathf.PI * 2.0f) / numWaypoints;
             for(int i = 0 ; i < numWaypoints ; i ++)
             {
@@ -32,9 +29,8 @@ public class FishPath: MonoBehaviour
         }
     }
 
-    // Use this for initialization
     void Awake () {
-        //Create the list contianing the wayypoints and spawn the fish rings
+        //Create the list contianing the wayypoints and spawn the fish rings on theese waypoìnts
         float theta = (Mathf.PI * 2.0f) / numWaypoints;
         for(int i = 0 ; i < numWaypoints ; i ++)
         {
@@ -43,12 +39,13 @@ public class FishPath: MonoBehaviour
             pos = transform.TransformPoint(pos);
             waypoints.Add(pos); 
             float angleDegrees = -angle*Mathf.Rad2Deg;
+            //also rotate the rings around the point
             Quaternion rot = Quaternion.Euler(0, angleDegrees, 0);
             Instantiate(swimRing, pos, rot);
         }
     }
 
-    // Update is called once per frame
+    //move the fish between the waypoints/rings
     void Update () 
     {
         Vector3 pos = transform.position;

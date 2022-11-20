@@ -11,17 +11,17 @@ public class BeatColour : SongMonitor
 	[SerializeField]
 	private Material mat;
 	
-    
-    private IEnumerator ChangeColour(Color _target)
+    //change colour and emssion colour in tune with the beat
+    private IEnumerator ChangeColour(Color targetColour)
 	{
 		mat.EnableKeyword("_EMISSION");
 		Color currentColour = mat.color;
 		Color initialColour = currentColour;
 		float timer = 0;
 		
-		while (currentColour != _target)
+		while (currentColour != targetColour)
 		{
-			currentColour = Color.Lerp(initialColour, _target, timer / timeToBeat);
+			currentColour = Color.Lerp(initialColour, targetColour, timer / timeToBeat);
 			timer += Time.deltaTime;
 			mat.SetColor("_EmissionColor", currentColour);
 			mat.color = currentColour;
@@ -34,20 +34,20 @@ public class BeatColour : SongMonitor
 	{
 		base.Update();
 		mat.color = Color.Lerp(mat.color, initialColour, restSmoothTime * Time.deltaTime);
-		//DynamicGI.UpdateEnvironment();
+		
 	}
 
+	//gets a random high saturation colour
 	public void RandomColour()
 	{
 		beatColour = Random.ColorHSV(0f, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
 	}
 
-    // Update is called once per frame
+    //when a beat is deetected begin the colour change
     public override void Beat()
 	{
 		RandomColour();
         base.Beat();
-		//Debug.Log("move here");
         StopCoroutine("ChangeColour");
 		StartCoroutine("ChangeColour", beatColour);
 	}

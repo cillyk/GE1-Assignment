@@ -13,6 +13,7 @@ public class FishSwim: MonoBehaviour
   private Vector3 direction;
   private Quaternion lookRotation;
 
+  //if the fish has finished its last swim run the swim routine
   void Update() 
   { 
     if(!canSwim)
@@ -32,19 +33,24 @@ public class FishSwim: MonoBehaviour
     direction = (targetPoint - currentPoint).normalized;
     lookRotation = Quaternion.LookRotation(direction);
     
+    //start a timer
     while (timer < fishSpeed)
     {
       timer += Time.deltaTime;
       float t = timer / fishSpeed;
+
+      //rotate and move the fish to the selected point
       transform.position = Vector3.Lerp(currentPoint, targetPoint, t);
       transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, t);
       
       yield return null;
     }
+      //have the fish wait for a random time
       yield return new WaitForSeconds(fishCooldown);
       canSwim = false;
   }
 
+  //pick one of the points planned that the fihs can travel to
   Vector3 RandomPoint() 
   {
     GameObject[] SpawnPoints = GameObject.FindGameObjectsWithTag(spawnPointTag);
