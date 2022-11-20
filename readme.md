@@ -24,15 +24,27 @@ I wish to create a futuristic fish tank in unity.
 
 # How it works
 
+Spectrum Data is taken from playing music, this music's data is then processed throughout the song playing to find "beats" in the song.
+Different intensity and frequency of beats will be used to control different parts of the project.
+
 # List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 
 | Class/asset | Source |
 |-----------|-----------|
-| MyClass.cs | Self written |
-| SongSpectrum.cs | Modified from [https://www.youtube.com/watch?v=PzVbaaxgPco]() |
-| MyClass2.cs | From [reference]() |
+| SongSpectrum.cs | Self written  |
+| SongMonitor.cs | Self written but followed tutorial from [https://www.youtube.com/watch?v=PzVbaaxgPco]() |
+| BeatMovement.cs | Self Written |
+| BeatColour.cs | Self Written |
+| CameraSwitch.cs | Self Written |
+| DecorationSpawner.cs | Self Written |
+| FishPath.cs | Self Written but based on work done in Lab |
+| FishSwim.cs | Self Written but based on work done in Lab |
+| PlayerFishCamera.cs | Self Written |
+| PlayerMovement.cs | Self Written |
 
 # References
+| Water Material | https://assetstore.unity.com/packages/3d/vegetation/fishes-and-underwater-environment-set-123678 |
+| Fish Models | https://assetstore.unity.com/packages/vfx/shaders/vertical-fog-and-water-depth-123985 |
 
 # What I am most proud of in the assignment
 
