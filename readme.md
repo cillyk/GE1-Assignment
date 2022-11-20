@@ -38,7 +38,7 @@ Different intensity and frequency of beats will be used to control different par
 | CameraSwitch.cs | Self Written |
 | DecorationSpawner.cs | Self Written |
 | FishPath.cs | Self Written but based on work done in Lab |
-| FishSwim.cs | Self Written but based on work done in Lab |
+| FishSwim.cs | Self Written |
 | PlayerFishCamera.cs | Self Written |
 | PlayerMovement.cs | Self Written |
 
