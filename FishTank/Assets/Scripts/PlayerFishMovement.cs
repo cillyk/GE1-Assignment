@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SubmarineMovement : MonoBehaviour
+public class PlayerFishMovement : MonoBehaviour
 {
     
     public float speed = 10;
@@ -20,9 +20,17 @@ public class SubmarineMovement : MonoBehaviour
         
         transform.Translate( 0,0, Input.GetAxis("Vertical") * speed * Time.deltaTime);
         transform.Rotate(0, Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime, 0);
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
-        GetComponent<Rigidbody>().AddForce(Vector3.up * 10,ForceMode.Acceleration);
+        GetComponent<Rigidbody>().velocity = transform.up * 1;
+        }
+        if (Input.GetKey(KeyCode.LeftControl))
+        {    
+        GetComponent<Rigidbody>().velocity = transform.up * -1;
+        }
+        else
+        {
+            GetComponent<Rigidbody>().velocity = transform.up * 0;
         }
     }
 }

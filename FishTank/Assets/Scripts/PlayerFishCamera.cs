@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SubmarineCamera : MonoBehaviour
+public class PlayerFishCamera : MonoBehaviour
 {
     public Transform player;
     public float Speed = 0.125f;
