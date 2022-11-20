@@ -45,8 +45,8 @@ Different intensity and frequency of beats will be used to control different par
 # References
 | Asset | Source |
 |-----------|-----------|
-| Water Material | https://assetstore.unity.com/packages/3d/vegetation/fishes-and-underwater-environment-set-123678 |
-| Fish Models | https://assetstore.unity.com/packages/vfx/shaders/vertical-fog-and-water-depth-123985 |
+| Water Material | https://assetstore.unity.com/packages/vfx/shaders/vertical-fog-and-water-depth-123985 |
+| Fish Models | https://assetstore.unity.com/packages/3d/vegetation/fishes-and-underwater-environment-set-123678  |
 
 # What I am most proud of in the assignment
 
