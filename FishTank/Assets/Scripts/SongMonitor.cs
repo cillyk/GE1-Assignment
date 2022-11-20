@@ -15,43 +15,34 @@ public class SongMonitor : MonoBehaviour
 	private float timer;
 	protected bool isBeat;
 
-    public virtual void Beat() {
-
-		//hit when bias is upper or lower creating a "beat
-        //Debug.Log("beat is happening");
+    public virtual void Beat() 
+	{
         timer = 0;
 		isBeat = true;
-    }
-    void Start()
-    {
-        
     }
 
     public virtual void Update()
 	{ 
 		
 		previousAudioValue = audioValue;
-		audioValue = SongSpectrum.SpectrumValue;
+		audioValue = SongSpectrum.spectrumValue;
 
-		//if audio bias less then audio value this frame
+		//if audio bias less then audio value (beat change)
 		if (previousAudioValue > bias &&
 			audioValue <= bias)
 		{
-			// "checkin that enough time passed for another beat"
+			//checking that enough time passed for another beat
 			if (timer > timeStep)
 				Beat();
 		}
 
-		//if audio bias more then audio value this frame
 		if (previousAudioValue <= bias &&
 			audioValue > bias)
 		{
-			// "checkin that enough time passed for another beat"
 			if (timer > timeStep)
 				Beat();
 		}
 
-		//updating time
 		timer += Time.deltaTime;
 	}
 }

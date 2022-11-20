@@ -5,21 +5,20 @@ using UnityEngine;
 public class SongSpectrum : MonoBehaviour
 {
     //how much to multiply the song by (adjust depending on song loudness)
-    public int SongMultiplier;
+    public int songMultiplier = 150;
 
-    private float[] Spectrum;
-    public static float SpectrumValue;
+    private float[] spectrum;
+    public static float spectrumValue;
 
-    // Start is called before the first frame update
     void Start()
     {
-     Spectrum = new float[128] ;
+     spectrum = new float[128] ;
     }
 
-    // Update is called once per frame
+    //store playing musics beat data into spectrum
     void Update()
     {
-        AudioListener.GetSpectrumData(Spectrum,0 ,FFTWindow.Hamming);
-        SpectrumValue = Spectrum[0] * SongMultiplier;
+        AudioListener.GetSpectrumData(spectrum,0 ,FFTWindow.Hamming);
+        spectrumValue = spectrum[0] * songMultiplier;
     }
 }

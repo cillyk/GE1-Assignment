@@ -2970,7 +2970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ba74d55a97a984cbde9edf06cb13fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SongMultiplier: 100
+  songMultiplier: 150
 --- !u!82 &684575962
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3099,7 +3099,6 @@ MonoBehaviour:
   timeToBeat: 0.01
   restSmoothTime: 2
   beatColour: {r: 0.23137255, g: 0.47843137, b: 0.42745098, a: 1}
-  noBeatColour: {r: 0.23137255, g: 0.47843137, b: 0.42745098, a: 1}
   mat: {fileID: 2100000, guid: de0bc4f7b64c8d04d9801a397297e1b7, type: 2}
 --- !u!1 &694906723
 GameObject:
@@ -3828,7 +3827,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959170915}
-  m_LocalRotation: {x: -0.04248294, y: 0.5518079, z: 0.014352538, w: 0.83276486}
+  m_LocalRotation: {x: -0.042482954, y: 0.5518079, z: 0.014352548, w: 0.8327648}
   m_LocalPosition: {x: 0.0000019073486, y: -0.24963409, z: -9.996883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4259,7 +4258,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112393409}
-  m_LocalRotation: {x: -0.03839409, y: -0.0658108, z: -0.0025341199, w: 0.99709}
+  m_LocalRotation: {x: -0.03839411, y: -0.06581077, z: -0.0025341203, w: 0.99709}
   m_LocalPosition: {x: 14.297533, y: 5.936088, z: -51.15514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4908,7 +4907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32d73878bc5a1af4281ae4f9d0705db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnPointTag: SpawnPoint
+  spawnPointTag: SpawnPoint
   decorations:
   - {fileID: 1599426273}
   - {fileID: 190578319}
