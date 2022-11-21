@@ -10,6 +10,7 @@
 [Ll]ogs
 [Uu]ser[Ss]ettings
 
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 [Mm]emoryCaptures
@@ -63,6 +64,7 @@ sysinfo.txt
 
 #Copyright
 *.mp3
+*.mp3.meta
 
 # Crashlytics generated file
 crashlytics-build.properties
