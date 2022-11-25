@@ -22,11 +22,11 @@ public class PlayerFishMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftControl))
         {    
-            GetComponent<Rigidbody>().velocity = transform.up * -1;
+            GetComponent<Rigidbody>().velocity = transform.up * -2;
         }
         if (Input.GetKey(KeyCode.Space))
         {
-            GetComponent<Rigidbody>().velocity = transform.up * 1;
+            GetComponent<Rigidbody>().velocity = transform.up * 2;
         }
 
         //when neither key is pressed return upward force to 0
