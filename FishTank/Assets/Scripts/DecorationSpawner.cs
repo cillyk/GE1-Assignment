@@ -20,6 +20,7 @@ using UnityEngine;
                 {
                     GameObject decoration = Instantiate(decorations[randomDecoration]);
                     decoration.transform.position = SpawnPoint.transform.position;
+                    decoration.transform.Rotate(0, Random.Range(0, 360) , 0);
                 }
             }
         }
