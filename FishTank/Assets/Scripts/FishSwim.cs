@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class FishSwim: MonoBehaviour 
 {
   public string spawnPointTag = "FishSpawnPoint";
   private float fishSpeed;
   private float fishCooldown;
   private bool canSwim = false;
+  private bool isCurrentlyColliding = false;
   private Vector3 targetPoint;
   private Vector3 currentPoint;
   private Vector3 direction;
   private Quaternion lookRotation;
   private Rigidbody rb;
 
+  
   //if the fish has finished its last swim run the swim routine
   void Update() 
   { 
@@ -28,8 +31,8 @@ public class FishSwim: MonoBehaviour
   {
     rb = GetComponent<Rigidbody>();
     float timer = 0;
-    fishSpeed = Random.Range(10, 20);
-    fishCooldown = Random.Range(1, 3);
+    fishSpeed = Random.Range(3, 12);
+    fishCooldown = Random.Range(1, 5);
     targetPoint = RandomPoint();
     currentPoint = rb.transform.position;
     direction = (targetPoint - currentPoint).normalized;
@@ -45,12 +48,21 @@ public class FishSwim: MonoBehaviour
       //rotate and move the fish to the selected point
       rb.transform.position = Vector3.Lerp(currentPoint, targetPoint, t);
       rb.transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, t);
-      
+
+      //if fish is colliding with an object exit the coruotine and try again
+      if (isCurrentlyColliding) 
+      {
+        break;
+      }
+
       yield return null;
+    
     }
-      //have the fish wait for a random time
-      yield return new WaitForSeconds(fishCooldown);
-      canSwim = false;
+
+    //have the fish wait for a random time
+    yield return new WaitForSeconds(fishCooldown);
+    canSwim = false;
+  
   }
 
   //pick one of the points planned that the fihs can travel to
@@ -63,9 +75,26 @@ public class FishSwim: MonoBehaviour
   }
 
   void OnCollisionEnter(Collision CollisionObject) 
-    {
-      Debug.Log("collide");
-     
-    }
+  {
+    isCurrentlyColliding = true;
+  }
+
+  void OnCollisionExit(Collision col) 
+  {
+    isCurrentlyColliding = false;
+  }
+
+  //if script is diabled ( disabled when enabling the fish player controller) 
+  //end the movement coroutine by saying the fish is colliding
+  void OnDisable()
+  {
+    isCurrentlyColliding = true;
+  }
+
+  void OnEnable()
+  {
+    isCurrentlyColliding = false;
+  }
+
 
 }

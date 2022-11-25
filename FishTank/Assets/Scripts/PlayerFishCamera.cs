@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerFishCamera : MonoBehaviour
 {
+    
     public Transform player;
     public float speed = 0.125f;
     public float FOV;

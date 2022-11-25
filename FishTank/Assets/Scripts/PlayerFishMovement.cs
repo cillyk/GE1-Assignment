@@ -8,9 +8,15 @@ public class PlayerFishMovement : MonoBehaviour
     public float speed = 10;
     public float rotSpeed = 100;
     
+    //reset rotation when script is enabled 
+    void OnEnable() 
+    {
+        transform.rotation = Quaternion.Euler(0, 0, 0);   
+    }
+
     //allow for swimming style movement
     void Update()
-    {
+    {   
         transform.Translate( 0,0, Input.GetAxis("Vertical") * speed * Time.deltaTime);
         transform.Rotate(0, Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime, 0); 
 
