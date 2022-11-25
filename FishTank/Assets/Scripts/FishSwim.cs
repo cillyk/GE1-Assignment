@@ -5,13 +5,14 @@ using UnityEngine;
 public class FishSwim: MonoBehaviour 
 {
   public string spawnPointTag = "FishSpawnPoint";
-  private float fishSpeed = 1;
-  private float fishCooldown = 1;
+  private float fishSpeed;
+  private float fishCooldown;
   private bool canSwim = false;
   private Vector3 targetPoint;
   private Vector3 currentPoint;
   private Vector3 direction;
   private Quaternion lookRotation;
+  private Rigidbody rb;
 
   //if the fish has finished its last swim run the swim routine
   void Update() 
@@ -25,13 +26,15 @@ public class FishSwim: MonoBehaviour
 
   IEnumerator Swim()
   {
+    rb = GetComponent<Rigidbody>();
     float timer = 0;
     fishSpeed = Random.Range(10, 20);
     fishCooldown = Random.Range(1, 3);
     targetPoint = RandomPoint();
-    currentPoint = transform.position;
+    currentPoint = rb.transform.position;
     direction = (targetPoint - currentPoint).normalized;
     lookRotation = Quaternion.LookRotation(direction);
+    
     
     //start a timer
     while (timer < fishSpeed)
@@ -40,8 +43,8 @@ public class FishSwim: MonoBehaviour
       float t = timer / fishSpeed;
 
       //rotate and move the fish to the selected point
-      transform.position = Vector3.Lerp(currentPoint, targetPoint, t);
-      transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, t);
+      rb.transform.position = Vector3.Lerp(currentPoint, targetPoint, t);
+      rb.transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, t);
       
       yield return null;
     }
@@ -58,5 +61,11 @@ public class FishSwim: MonoBehaviour
     Vector3 randomPoint = SpawnPoints[randomIndex].transform.position;
     return randomPoint;
   }
+
+  void OnCollisionEnter(Collision CollisionObject) 
+    {
+      Debug.Log("collide");
+     
+    }
 
 }
