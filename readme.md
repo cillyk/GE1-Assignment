@@ -8,7 +8,9 @@ Class Group: DT211C
 
 # Demo Video
 
-![image](https://user-images.githubusercontent.com/55165823/207372677-99a604e9-8cf5-4dc9-bf08-97261aee40f7.png)
+![https://www.youtube.com/watch?v=rD5loMY1w1M](https://user-images.githubusercontent.com/55165823/207372677-99a604e9-8cf5-4dc9-bf08-97261aee40f7.png)
+
+https://www.youtube.com/watch?v=rD5loMY1w1M
 
 # Description of the project
 
