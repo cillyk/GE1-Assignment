@@ -62,8 +62,8 @@ sysinfo.txt
 *.app
 
 #Copyright
-*.mp3
-*.mp3.meta
+#*.mp3
+#*.mp3.meta
 
 # Crashlytics generated file
 crashlytics-build.properties
