@@ -105,9 +105,11 @@ When the user presses E the camera gets moved to a fish in the tank and this fis
 
 # What I am most proud of in the assignment
 
-I am most proud of how the visualiser moves and changes as the song progresses, When starting out at the begging of the default song the visualiser is quite slow and as the song progresses it becomes more rapid and the colour changes begin giving a kind of disco effect when the song reaches it's peak/drop. It has been fun to test it out with multiple songs of different genres and see how it looks. Songs with breaks/big build ups or periods of quietness look very cool with it.
+I am most proud of how the visualiser moves and changes as the song progresses, When starting out at the begging of the default song the visualiser is quite slow and as the song progresses it becomes more rapid and the colour changes begin giving a kind of disco effect when the song reaches it's peak/drop. It has been fun to test it out with multiple songs of different genres and see how it looks. Songs with breaks/big build ups or periods of quietness look very cool with it. I learnt alot about unity development here as it was vital to use good pratices such as coroutines and inheritence.
 
-I am also proud of how the tank looks with the fishes moving around it and the glowing lights of the speakers. The tank being randomly generated with random decoration is also quite cool.
+I am also proud of how the tank looks with the fishes moving around it and the glowing lights of the speakers. The tank being randomly generated with random decoration is also quite cool. It was channelging to get the fishes movement in the tank to interact and collide with one another. I was glad to get this working properly and it thought me alot about how collisions,rigidbodies ect work in unity.
+
+I was also proud to get VR implemented without personally owning a VR headset, I did this by using XR Device Simulation and now have 2 build of the project one with VR and one without. This helped me learn how to programme for VR and will be useful in future projects.
 
 
 # Proposal submitted earlier can go here:
