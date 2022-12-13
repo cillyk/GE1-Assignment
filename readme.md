@@ -71,7 +71,7 @@ There are 4 variables for controlling each beat:
  
 These 4 variables are adjusted for each item in the project that is changed due to a beat for example the case of the visualiser it is a cube that adjusts its scale when a beat of certain bias is found.
 
-The movement of the fishes is caused by each fish picking a select to point to travel to, the fish then begins traveling to this point but if it is collided with it choses an alternative path.
+The movement of the fishes is caused by each fish picking a select to point to travel to then randomly chosing the speed it will travel to this point at, oncce it arrives at the point it will rest for a ranodm ammount of time before chosing the next point. While a fish is moving between points if it is collided with it choses an alternative path.
 
 The decoration works by for each decoration point generating a number and that number results in either an item going there or not an item going there. The item also gets given a random size or rotation.
 
