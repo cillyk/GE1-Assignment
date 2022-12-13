@@ -1,6 +1,6 @@
-# Project Title
+# The Futuristic Fish Tank Vizualiser
 
-Name: The Futuristic Fish Tank Vizualiser
+Name: Cillian
 
 Student Number: C19491104
 
@@ -12,18 +12,42 @@ Video Here
 
 # Description of the project
 
-
-
 A futuristic fish tank that acts as a music visualizer
 
  - There are fish to be inside the fish tank moving around the tank on ranomly generated path.
- - Music plays and this can be any song the user decides on.
+ - Music plays and this can be any song.
  - The lighting and colours of the tank will change in beat with the music.
- - Thereare music visualisers around the fish tank.
+ - There are music visualisers around the fish tank which dance to the music.
  - The tank is decorated randomly on every start of the project.
- - There is be a Fish you can cantrol y pressing E and then you can move around the tank and view it in first person with water like physics.
-
+ - There is be a Fish you can cantrol by pressing E and then you can move around the tank and view it in 3rd person with water like physics.
+ - The fish inside the tnak can be collided with by the layable fish and will adjust their path to avoid the collisions.
+ - Project can be run in both VR and regular desktop mode (Did not have acess to VR hardware so implemntation is based of XR emualation).
+ 
 # Instructions for use
+
+Non VR Setup
+
+ - Either Download the NonVR builf from the builds folder and run the FishTank.exe on a windows computer.
+ - Alternatively clone the main branch and open the project in the unity eidtor.
+
+VR Setup
+
+ - Download the VR build from the builds folder and run the FishTank.exe on a windows computer.
+ - Alternatively clone the VRBuild branch and open the project in the unity eidtor.
+ - Ensure you have an XR Compatible headset (Or can emualte VR movement with mouse holding right click + mouse button 5)
+ 
+Controls
+ - E to toggle between viewing the tank and cotnrolling the fish.
+ - WASD For moving the fish.
+ - Space to swim up.
+ - Control to swim down.
+
+How to change the song
+
+ - If downloading a build it will contian a default song.
+ - To change the song clone the apropriate branch and change the song in the UNity editor in the Music object.
+ - Adjust the song multiplier value to ensure the chosen song gives your desired ammount of movement.
+
 
 # How it works
 
