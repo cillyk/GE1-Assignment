@@ -34,12 +34,12 @@ A futuristic fish tank that acts as a music visualizer
 
 **Non VR Setup**
 
- - Either Download the NonVR build from the builds folder and run the FishTank.exe on a windows computer.
+ - Either Download the NonVR build from the builds folder or the releases section and run the FishTank.exe on a windows computer.
  - Alternatively clone the main branch and open the project in the unity editor.
 
 **VR Setup**
 
- - Download the VR build from the builds folder and run the FishTank.exe on a windows computer.
+ - Download the VR build from the builds folder or the releases section and run the FishTank.exe on a windows computer.
  - Alternatively clone the VRBuild branch and open the project in the unity editor.
  - Ensure you have an XR Compatible headset connected (Or can emulate VR movement with mouse holding right click + mouse button 5)
  
