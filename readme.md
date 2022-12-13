@@ -59,6 +59,24 @@ A futuristic fish tank that acts as a music visualizer
 Spectrum Data is taken from playing music, this music's data is then processed throughout the song playing to find "beats" in the song.
 Different intensity and frequency of beats will be used to control different parts of the project.
 
+There are 4 variable for controlling each beat:
+ - Bias: How much does the beat have to change from the previous beta to be considered a beat.
+ - Time Step: - How much time must pass beforte trirggering another beat.
+ - Time to beat: How much time should the beats action take.
+ - Rest Smooth Time: How much rest per beat.
+ 
+These 4 vartiables are adjusted for each item in the project that is changed due to a beat for example the case of the visualiser it is a cube that asjusts its scale when a beat of certain bias is found.
+
+The movement of the fishes is caused by each fish picking a select to point to travel to, The fish then beigns travveling to this point but if it is collided with it choses an alterative path.
+
+The decoration works by for each deocration point generating a number and that number results in either an item going there or not an item going there. The item also gets given a ranodm size or rotation.
+
+The fish moving around the rings works by geenration a circle of gizmos around the fish and at each gizmo in this ring placing a fish ring.
+
+The default camera is moving around the fish tank on a track. However in VR this camera is move to be the VR headset.
+
+When the user presses E the camera gets moved to a fish in the tank and this fish's path is halted and the user can then cotnrol it. When the use switches of controlling the fihs it returns to it's normal path.
+
 # List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 
 | Class/asset | Source |
