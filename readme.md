@@ -8,7 +8,9 @@ Class Group: DT211C
 
 # Demo Video
 
-![https://www.youtube.com/watch?v=rD5loMY1w1M](https://user-images.githubusercontent.com/55165823/207372677-99a604e9-8cf5-4dc9-bf08-97261aee40f7.png)
+
+
+[![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/55165823/207372677-99a604e9-8cf5-4dc9-bf08-97261aee40f7.png)](https://www.youtube.com/watch?v=rD5loMY1w1M)
 
 https://www.youtube.com/watch?v=rD5loMY1w1M
 
@@ -16,30 +18,30 @@ https://www.youtube.com/watch?v=rD5loMY1w1M
 
 A futuristic fish tank that acts as a music visualizer
 
- - There are fish  inside the fish tank moving around the tank on ranomly generated path.
- - The fish speed and rotation is random.
+ - There are fish  inside the fish tank moving around the tank on randomly generated path.
+ - The fish speed and rotation are random.
  - Music plays and this can be any song.
  - The lighting and colours of the tank will change in beat with the music.
  - There are music visualisers around the fish tank which dance to the music.
  - There is a fish swimming between a generated path of rings.
  - The tank is decorated randomly start of the project.
- - These decorations vary in position, ammount, size and rotation.
+ - These decorations vary in position, amount, size and rotation.
  - There is a Fish you can control by pressing E and then you can move around the tank and view it in 3rd person with water like physics.
- - The fish inside the tank can be collided with by the playable fish or generated decoratuions and will adjust their path to avoid the collisions.
- - Project can be run in both VR and regular desktop mode (Did not have acess to VR hardware so implemntation is based on XR emualation).
+ - The fish inside the tank can be collided with by the playable fish or generated decorations and will adjust their path to avoid the collisions.
+ - Project can be run in both VR and regular desktop mode (Did not have access to VR hardware so implementation is based on XR emulation).
  
 # Instructions for use
 
 **Non VR Setup**
 
  - Either Download the NonVR build from the builds folder and run the FishTank.exe on a windows computer.
- - Alternatively clone the main branch and open the project in the unity eidtor.
+ - Alternatively clone the main branch and open the project in the unity editor.
 
 **VR Setup**
 
  - Download the VR build from the builds folder and run the FishTank.exe on a windows computer.
- - Alternatively clone the VRBuild branch and open the project in the unity eidtor.
- - Ensure you have an XR Compatible headset connected (Or can emualte VR movement with mouse holding right click + mouse button 5)
+ - Alternatively clone the VRBuild branch and open the project in the unity editor.
+ - Ensure you have an XR Compatible headset connected (Or can emulate VR movement with mouse holding right click + mouse button 5)
  
 **Controls**
 
@@ -50,10 +52,10 @@ A futuristic fish tank that acts as a music visualizer
 
 **Music**
 
- - If downloading a build it will contian a default song.
- - To change the song clone the apropriate branch and change the song in the Unity editor in the Music object.
- - Adjust the song multiplier value to ensure the chosen song gives your desired ammount of movement.
- - Quieter songs may require more of a multiplication to ensure all elements of the visualtion are seen throughout the song.
+ - If downloading a build it will contain a default song.
+ - To change the song, clone the appropriate branch and change the song in the Unity editor in the Music object.
+ - Adjust the song multiplier value to ensure the chosen song gives your desired amount of movement.
+ - Quieter songs may require more of a multiplication to ensure all elements of the visualization are seen throughout the song.
 
 
 # How it works
@@ -61,25 +63,25 @@ A futuristic fish tank that acts as a music visualizer
 Spectrum Data is taken from playing music, this music's data is then processed throughout the song playing to find "beats" in the song.
 Different intensity and frequency of beats will be used to control different parts of the project.
 
-There are 4 variable for controlling each beat:
+There are 4 variables for controlling each beat:
  - Bias: How much does the beat have to change from the previous beta to be considered a beat.
- - Time Step: - How much time must pass beforte trirggering another beat.
+ - Time Step: - How much time must pass before triggering another beat.
  - Time to beat: How much time should the beats action take.
  - Rest Smooth Time: How much rest per beat.
  
-These 4 vartiables are adjusted for each item in the project that is changed due to a beat for example the case of the visualiser it is a cube that asjusts its scale when a beat of certain bias is found.
+These 4 variables are adjusted for each item in the project that is changed due to a beat for example the case of the visualiser it is a cube that adjusts its scale when a beat of certain bias is found.
 
-The movement of the fishes is caused by each fish picking a select to point to travel to, The fish then beigns travveling to this point but if it is collided with it choses an alterative path.
+The movement of the fishes is caused by each fish picking a select to point to travel to, the fish then begins traveling to this point but if it is collided with it choses an alternative path.
 
-The decoration works by for each deocration point generating a number and that number results in either an item going there or not an item going there. The item also gets given a ranodm size or rotation.
+The decoration works by for each decoration point generating a number and that number results in either an item going there or not an item going there. The item also gets given a random size or rotation.
 
-The fish moving around the rings works by geenration a circle of gizmos around the fish and at each gizmo in this ring placing a fish ring.
+The fish moving around the rings works by generation a circle of gizmos around the fish and at each gizmo in this ring placing a fish ring.
 
-The default camera is moving around the fish tank on a track. However in VR this camera is move to be the VR headset.
+The default camera is moving around the fish tank on a track. However, in VR this camera is move to be the VR headset.
 
-When the user presses E the camera gets moved to a fish in the tank and this fish's path is halted and the user can then cotnrol it. When the use switches of controlling the fihs it returns to it's normal path.
+When the user presses E the camera gets moved to a fish in the tank and this fish's path is halted and the user can then control it. When the use switches of controlling the fish it returns to its normal path.
 
-# List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
+# List of classes/assets in the project and whether made yourself or modified or if it’s from a source, please give the reference
 
 | Class/asset | Source |
 |-----------|-----------|
@@ -103,9 +105,9 @@ When the user presses E the camera gets moved to a fish in the tank and this fis
 
 # What I am most proud of in the assignment
 
-I am most proud of how the visualiser moves and changes as the song progresses, When starting out at the begging of the default song the visualiser is quite slow and as the song progresses it becomes more rapid and the colour changes begin giving a kind of disco effect when the song reaches it's peak/drop. It has been fun to test it out with multiple songs of different grenres and see how it looks. Songs with breaks/big build ups of quiteness look very cool with it.
+I am most proud of how the visualiser moves and changes as the song progresses, When starting out at the begging of the default song the visualiser is quite slow and as the song progresses it becomes more rapid and the colour changes begin giving a kind of disco effect when the song reaches it's peak/drop. It has been fun to test it out with multiple songs of different genres and see how it looks. Songs with breaks/big build ups or periods of quietness look very cool with it.
 
-I am also proud of how the tank looks with the fishes moving around it and the glowing lights of the speakers. The tank being randomly genereated with random decoration is aso quite cool.
+I am also proud of how the tank looks with the fishes moving around it and the glowing lights of the speakers. The tank being randomly generated with random decoration is also quite cool.
 
 
 # Proposal submitted earlier can go here:
@@ -113,12 +115,11 @@ I am also proud of how the tank looks with the fishes moving around it and the g
 *Original Proposal*
 
 A futuristic fish tank
-
 I wish to create a futuristic fish tank in unity
-I want the fish to be generated using shapes and then to have a randomly selected appearence
-I want the tank go have a futuristic appearance along with buttons that the user can interact with
-The buttons should change the apperence of both the fish and tanks
-The Fish will move in a generated path using similar trignamotery to what we did In class
+I want the fish to be generated using shapes and then to have a randomly selected appearance.
+I want the tank to go have a futuristic appearance along with buttons that the user can interact with.
+The buttons should change the appearance of both the fish and tanks.
+The Fish will move in a generated path using similar trigonometry to what we did in class.
 
 
 
