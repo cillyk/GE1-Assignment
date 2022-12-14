@@ -28,11 +28,11 @@ public class UnderwaterAudio : MonoBehaviour
                 PlayBubbles();
             }
             
-            lowPassFilter.cutoffFrequency = 100;
+            lowPassFilter.cutoffFrequency = 200;
         }
         else
         {
-            lowPassFilter.cutoffFrequency = 0;
+            lowPassFilter.cutoffFrequency = 999999;
         }
         if(Input.GetKeyDown(KeyCode.E))
         {
