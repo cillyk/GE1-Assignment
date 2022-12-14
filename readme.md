@@ -1,4 +1,4 @@
-# The Futuristic Fish Tank Vizualiser
+# The Futuristic Fish Tank Visualizer
 
 Name: Cillian
 
@@ -8,11 +8,9 @@ Class Group: DT211C
 
 # Demo Video
 
+[![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/55165823/207372677-99a604e9-8cf5-4dc9-bf08-97261aee40f7.png)](https://www.youtube.com/watch?v=fQQVWsDn_7Q)
 
-
-[![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/55165823/207372677-99a604e9-8cf5-4dc9-bf08-97261aee40f7.png)](https://www.youtube.com/watch?v=rD5loMY1w1M)
-
-https://www.youtube.com/watch?v=rD5loMY1w1M
+https://www.youtube.com/watch?v=fQQVWsDn_7Q
 
 # Description of the project
 
