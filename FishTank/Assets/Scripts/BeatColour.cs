@@ -6,7 +6,7 @@ using UnityEngine;
 public class BeatColour : SongMonitor
 {
     public Color beatColour;
-	Color initialColour;
+	public Color initialColour;
 
 	[SerializeField]
 	private Material mat;
@@ -33,7 +33,7 @@ public class BeatColour : SongMonitor
     public override void Update()
 	{
 		base.Update();
-		mat.color = Color.Lerp(mat.color, initialColour, restSmoothTime * Time.deltaTime);
+		
 		
 	}
 
