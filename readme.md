@@ -71,7 +71,7 @@ There are 4 variables for controlling each beat:
  
 These 4 variables are adjusted for each item in the project that is changed due to a beat for example the case of the visualiser it is a cube that adjusts its scale when a beat of certain bias is found.
 
-The movement of the fishes is caused by each fish picking a select to point to travel to, the fish then begins traveling to this point but if it is collided with it choses an alternative path.
+The movement of the fishes is caused by each fish picking a select to point to travel to then randomly chosing the speed it will travel to this point at, oncce it arrives at the point it will rest for a ranodm ammount of time before chosing the next point. While a fish is moving between points if it is collided with it choses an alternative path.
 
 The decoration works by for each decoration point generating a number and that number results in either an item going there or not an item going there. The item also gets given a random size or rotation.
 
@@ -105,7 +105,7 @@ When the user presses E the camera gets moved to a fish in the tank and this fis
 
 # What I am most proud of in the assignment
 
-I am most proud of how the visualiser moves and changes as the song progresses, When starting out at the begging of the default song the visualiser is quite slow and as the song progresses it becomes more rapid and the colour changes begin giving a kind of disco effect when the song reaches it's peak/drop. It has been fun to test it out with multiple songs of different genres and see how it looks. Songs with breaks/big build ups or periods of quietness look very cool with it. I learnt alot about unity development here as it was vital to use good pratices such as coroutines and inheritence.
+I am most proud of how the visualiser moves and changes as the song progresses, At the start of the default song the visualiser is quite slow and as the song progresses it becomes more rapid and the colour changes begin giving a kind of disco effect when the song reaches it's peak/drop. It has been fun to test it out with multiple songs of different genres and see how it looks. Songs with breaks/big build ups or periods of quietness look very cool with it. I learnt alot about unity development here as it was vital to use good pratices such as coroutines and inheritence.
 
 I am also proud of how the tank looks with the fishes moving around it and the glowing lights of the speakers. The tank being randomly generated with random decoration is also quite cool. It was channelging to get the fishes movement in the tank to interact and collide with one another. I was glad to get this working properly and it thought me alot about how collisions,rigidbodies ect work in unity.
 
