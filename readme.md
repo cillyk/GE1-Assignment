@@ -27,6 +27,7 @@ A futuristic fish tank that acts as a music visualizer
  - The tank is decorated randomly start of the project.
  - These decorations vary in position, amount, size and rotation.
  - There is a Fish you can control by pressing E and then you can move around the tank and view it in 3rd person with water like physics.
+ - When controlling the fish an audio effect will play and the music will be muffled (simulating underwater sound)
  - The fish inside the tank can be collided with by the playable fish or generated decorations and will adjust their path to avoid the collisions.
  - Project can be run in both VR and regular desktop mode (Did not have access to VR hardware so implementation is based on XR emulation).
  
@@ -95,7 +96,9 @@ When the user presses E the camera gets moved to a fish in the tank and this fis
 | FishSwim.cs | Self Written |
 | PlayerFishCamera.cs | Self Written |
 | PlayerMovement.cs | Self Written |
+| UnderwaterAudio.cs | Self Written |
 | VRManager.cs | Self Written |
+
 
 # References
 | Asset | Source |
