@@ -4,7 +4,7 @@ Name: Cillian
 
 Student Number: C19491104
 
-Class Group: DT211C
+Class Group: DT211C/TU857
 
 # Demo Video
 
